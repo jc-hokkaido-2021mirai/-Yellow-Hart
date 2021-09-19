@@ -1,0 +1,32 @@
+.vc-back {
+    background-color: #ff5a00;
+    background-position: center;
+}
+
+.vc-back-black {
+    background-color: #000;
+}
+
+.vc-back-caption {
+    background-color: #32383e;
+}
+
+.vc-logo-shader {
+    box-shadow: 0.5rem;
+}
+
+.vc-back-card {
+    background-color: #e13501;
+    border: 0.2rem solid #444;
+    transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+}
+
+.vc-back-card:hover, .vc-back-card:focus {
+    border: 0.2rem solid #562200;
+}
+
+.vc-back-card:active {
+    border: 0.2rem solid #f00400;
+}

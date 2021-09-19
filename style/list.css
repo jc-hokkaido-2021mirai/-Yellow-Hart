@@ -1,0 +1,58 @@
+ul, ol, dl {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul.black-view, ol.black-view, ul.orange-view, ol.orange-view {
+    padding: 0;
+    position: relative;
+}
+
+ul.black-view li, ol.black-view li {
+    color: #fff;
+    margin-bottom: 0.3rem;
+    line-height: 1.5;
+    padding: 0.3em;
+    list-style-type: none !important;
+    overflow-wrap: anywhere;
+    background-color: #666;
+    border-left: 0.5rem solid #333;
+}
+
+ul.black-view li.all-view h5, ol.black-view li.all-view h5 {
+    padding: 0.5rem;
+    background-color: #262626;
+    margin-bottom: 0.4rem;
+}
+
+ul.black-view li.all-view, ol.black-view li.all-view {
+    color: #fff;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    padding: 0.5em;
+    list-style-type: none !important;
+    overflow-wrap: anywhere;
+    border: none;
+}
+
+ul.orange-view li, ol.orange-view li {
+    color: #fff;
+    border-left: solid 6px #ff5a00;
+    line-height: 1.5;
+    padding: 0.5em;
+    list-style-type: none !important;
+    overflow-wrap: anywhere;
+}
+
+list-click {
+    cursor: pointer;
+}
+
+list-click:focus, list-click:hover {
+    background-color: #666;
+}
+
+list-click:active {
+    background-color: #333;
+}

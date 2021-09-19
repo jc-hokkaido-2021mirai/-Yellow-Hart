@@ -1,0 +1,181 @@
+@keyframes fadeIn {
+    0% {
+	opacity: 0;
+	transform: translateY(-10px);
+    }
+    100% {
+	opacity: 1;
+	transform: none;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+	opacity: 1;
+    }
+    100% {
+	opacity: 0;
+    }
+}
+
+details.main.aclose .details-content {
+    animation: fadeOut 0.5s ease-in-out;
+    -moz-animation: fadeOut 0.5s ease-in-out;
+    -webkit-animation: fadeOut 0.5s ease-in-out;
+}
+
+details.sub.aclose .details-content-sub {
+    animation: fadeOut 0.5s ease;
+    -moz-animation: fadeOut 0.5s ease;
+    -webkit-animation: fadeOut 0.5s ease;
+}
+
+details.main[open] .details-content {
+    animation: fadeIn 0.5s ease;
+    -moz-animation: fadeIn 0.5s ease;
+    -webkit-animation: fadeIn 0.5s ease;
+}
+
+details.sub[open] .details-content-sub {
+    animation: fadeIn 0.5s ease;
+    -moz-animation: fadeIn 0.5s ease;
+    -webkit-animation: fadeIn 0.5s ease;
+}
+
+.summary {
+    position: relative;
+    display: block;
+    padding: 0.5rem 2.3rem;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #222;
+    transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+    margin-bottom: 0.5rem;
+}
+
+.summary:hover {
+    background-color: #444;
+}
+
+.summary::marker {
+    display: none;
+}
+
+.summary:before, .summary:after {
+    content: "";
+    margin: auto 0 auto 0.5rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.summary:before {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 0.3rem;
+    background-color: #000;
+}
+
+.summary:after {
+    left: 0.5rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 0.4rem solid transparent;
+    border-left: 0.5rem solid #ff5a00;
+    box-sizing: border-box;
+    transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+}
+
+details.main[open] .summary {
+    background-color: #ff5a00;
+    box-shadow: 0 0.3rem 1rem #000;
+}
+
+details.main[open] .summary:after {
+    transform: rotate(90deg);
+    left: 0.33rem;
+    top: 0.45rem;
+}
+
+.details-content {
+    border-left: 0.3rem dashed #000;
+    padding-left: 0.5rem;
+    padding-top: 0.6rem;
+}
+
+/* Sub */
+
+.summary-sub {
+    position: relative;
+    display: block;
+    padding: 0.2rem 2.0rem;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #222;
+    transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+    margin-bottom: 0.5rem;
+    margin-right: 2.5em;
+    margin-left: 0.5rem;
+    border-right: 0.2rem solid #000;
+    overflow-wrap: break-word;
+}
+
+.summary-sub:hover {
+    background-color: #ff5a00;
+}
+
+.summary-sub::marker {
+    display: none;
+}
+
+.summary-sub:before, .summary-sub:after {
+    content: "";
+    margin: auto 0 auto 0.5rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.summary-sub:before {
+    width: 1.0rem;
+    height: 1.0rem;
+    background-color: #000;
+}
+
+.summary-sub:after {
+    left: 0.38rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 0.25rem solid transparent;
+    border-left: 0.3rem solid #ff5a00;
+    box-sizing: border-box;
+    transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+}
+
+details.sub[open] .summary-sub {
+    background-color: #ff5a00;
+    margin-right: 1.5rem;
+}
+
+details.sub[open] .summary-sub:after {
+    transform: rotate(90deg);
+    left: 0.2rem;
+    top: 0.38rem;
+}
+
+.details-content-sub {
+    border-left: 0.3rem dashed #333;
+    margin-left: 0.4rem;
+    overflow-wrap: break-word;
+    padding-left: 0.5rem;
+}
