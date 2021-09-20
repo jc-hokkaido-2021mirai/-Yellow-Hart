@@ -127,7 +127,7 @@ class loader {
      * @return string 引数に合ったHTMLを生成し、文字列として渡します
      */
     function loadHeader($site_title, $title): string {
-	$loader_css = ['font-awesome/css/all.min.css', 'font-awesome/css/brands.min.css', 'font-awesome/css/regular.min.css', 'font-awesome/css/solid.min.css', 'style.css', 'button.css', 'details.css', 'select.css', 'check.css', 'list.css', 'radio.css', 'background.css', 'popup.css'];
+	$loader_css = ['font-awesome/css/all.min.css', 'font-awesome/css/brands.min.css', 'font-awesome/css/regular.min.css', 'font-awesome/css/solid.min.css', 'style.css', 'button.css', 'details.css', 'select.css', 'check.css', 'list.css', 'radio.css', 'background.css', 'popup.css', 'jquery.bxslider.css'];
 
 	$loader_text = '';
 
